@@ -10,7 +10,7 @@ Created on Wed Jan 23 09:05:11 2019
 #TASK 2: Cast age to int data type.
 #-------------------------------------------
 
-
+#
 ##With a new line:
 #print ("What’s your age?")
 #age = int(input())
@@ -25,23 +25,23 @@ Created on Wed Jan 23 09:05:11 2019
 #-------------------------------------------
     
     
-#Option = input("Please input yes or no ").lower()
+Option = input("Please input yes or no ").lower()
 
 
 #-------------------------------------------
 #TASK 4: An example for validating string length
 #-------------------------------------------
-
+#
 #Option = input("Please input yes or no ").lower()
 #print(len(Option))
-
+#
 #if len(Option) == 2 or len(Option)==3:
 #    print ("yay!")
 #else:
 #    print ("nay!!!")
-
-
-
+#
+#
+#
 #if 2 <= len(Option) < 4:
 #    print ("yay!")no
 #else:
@@ -56,33 +56,33 @@ Created on Wed Jan 23 09:05:11 2019
 #-------------------------------------------
 
 
-#print("***choice****")
-#print("1. Display my name")
-#print("2. Display my age")
-#print("3. Display my city")
-#choice = int(input("What is your choice? "))
-#
-#if choice == 1:
-#    print("Z")
-#elif choice == 2:
-#    print("5 years old")
-#elif choice == 3:
-#    print("London")
-#
-#
-#
-##while choice < 1 or choice > 3:
-##    choice = int(input("What is your choice? "))
-#
-#
-#while True:
-#    try:
-#        while choice< 1 or choice > 3:
-#            choice = int(input('What is your choice?'))
-#            break
-#    except ValueError:
-#        print('please type a number! ')
-#        
+print("***choice****")
+print("1. Display my name")
+print("2. Display my age")
+print("3. Display my city")
+choice = int(input("What is your choice? "))
+
+if choice == 1:
+    print("Z")
+elif choice == 2:
+    print("5 years old")
+elif choice == 3:
+    print("London")
+
+
+
+#while choice < 1 or choice > 3:
+#    choice = int(input("What is your choice? "))
+
+
+while True:
+    try:
+        while choice< 1 or choice > 3:
+            choice = int(input('What is your choice?'))
+        break
+    except ValueError:
+        print('please type a number! ')
+        
         
         
         
@@ -92,22 +92,22 @@ Created on Wed Jan 23 09:05:11 2019
 #In a scenario where you would not want the description of a Spam to be empty and an input value must be greater than zero, you can write some validation as (validate those values passed to the constructor).
 #-------------------------------------------
         
-class Spam(object):
-    def __init__(self, description, value):
-        if not description or value <=0:    
-            raise ValueError
-        self.description = description
-        self.value = value
-        
-
-s = Spam("c", 5)
-
-#assert version
-  
-class Spam2(object): 
-    def __init__(self, description, value): 
-        assert description != "" 
-        assert value > 0 
-        self.description = description 
-        self.value = value
-s = Spam2("c", -5)
+#class Spam(object):
+#    def __init__(self, description, value):
+#        if not description or value <=0:    
+#            raise ValueError
+#        self.description = description
+#        self.value = value
+#        
+#
+#s = Spam("c", 5)
+#
+##assert version
+#  
+#class Spam2(object): 
+#    def __init__(self, description, value): 
+#        assert description != "" 
+#        assert value > 0 
+#        self.description = description 
+#        self.value = value
+#s = Spam2("c", -5)
