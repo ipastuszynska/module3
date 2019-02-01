@@ -9,62 +9,62 @@ Created on Mon Jan 21 16:34:09 2019
 #--------------------------------------------------
 
 
-#
-#try:
-#    f = open('testfile')
-#except Exception:
-#    print('Error!')
-#    
-#    
-#try:
-#    f = open('testfile')
-#except Exception:
-#    print("Sorry, this file does not exist, or the file name is wrong. Please double check.")
-#    
-#
-#try:
-#    f = open('testfile.txt')
-#except Exception:
-#    print('Error!')
+
+try:
+    f = open('testfile')
+except Exception:
+    print('Error!')
+    
+    
+try:
+    f = open('testfile')
+except Exception:
+    print("Sorry, this file does not exist, or the file name is wrong. Please double check.")
+    
+
+try:
+    f = open('testfile.txt')
+except Exception:
+    print('Error!')
     
     
 #--------------------------------------------------
 #TASK2: Multiple errors
 #--------------------------------------------------
     
-##try:
-##    f = open('testfile.txt')
-##    s1 = not_exsit
-##except Exception:
-##    print("Sorry, this file does not exist, or the file name is wrong. Please double check.")
-
-
-# It still prints the same error message you wrote before, although the open file function has passed correctly.
-# In this case we can use specific exceptions to filter out the error reporting process: e.g. change ‘Exception’ to ‘FileNotFoundError’.
-
 #try:
 #    f = open('testfile.txt')
 #    s1 = not_exsit
-#except FileNotFoundError:
-#    print("Sorry, this file does not exist, or the file name is wrong. Please double check.")
-    
-#try:   
-#    f = open('testfile.txt')
-#    s1 = not_exsit
-#except FileNotFoundError:
-#    print('Sorry, this file does not exist, or the file name is wrong. Please double check.')
 #except Exception:
-#        print('Sorry. Something is wrong after opening function.')
+#    print("Sorry, this file does not exist, or the file name is wrong. Please double check.")
+
+
+ It still prints the same error message you wrote before, although the open file function has passed correctly.
+ In this case we can use specific exceptions to filter out the error reporting process: e.g. change ‘Exception’ to ‘FileNotFoundError’.
+
+try:
+    f = open('testfile.txt')
+    s1 = not_exsit
+except FileNotFoundError:
+    print("Sorry, this file does not exist, or the file name is wrong. Please double check.")
+    
+try:   
+    f = open('testfile.txt')
+    s1 = not_exsit
+except FileNotFoundError:
+    print('Sorry, this file does not exist, or the file name is wrong. Please double check.')
+except Exception:
+        print('Sorry. Something is wrong after opening function.')
 
 #--------------------------------------------------
 #BUILT IN EXCEPTIONS
 #--------------------------------------------------
-
+#
 # print(math.sqrt(-1)) is a ValueError.
 # 1+2+’three’ is a TypeError.
 # 1/0 is a ZeroDivisionError.
 # For i in range (5), forget ‘:’ is a SyntaxError.
-
+#
 # Exception is actually an object in Python
 
 

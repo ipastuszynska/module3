@@ -74,8 +74,8 @@ def choice (balance):
 #called if buing data was the choice in the def choice (balance)
 def DataBundlePurchasePhone(balance):
     count=0
-    while count < 3:
-        phoneNumber = input("Sure, we can give you more data. Please type your phone number first: ")
+    while count < 5:
+        phoneNumber = input("Sure, we can give you more data. Please type your phone number first. You have only 5 chances to get this right. Pleas estrat with 07: ")
         if (isValid(phoneNumber)):  
             print ("Valid Number")   
             repeatPhoneNumber = input("Thanks! Better safe than sorry. Please confirm your phone number: ")
